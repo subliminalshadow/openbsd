@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT =	AssaultCube First Person Shooter
+COMMENT =	fast and fun First-Person-Shooter
 
 V =		1.2.0.2
 DISTNAME = 	AssaultCube_v$V
@@ -12,8 +12,6 @@ HOMEPAGE =	http://assault.cubers.net/
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=actiongame/}
 
-MAINTAINER =	subliminal <noxeternae@yandex.ru>
-
 # zlib license
 PERMIT_DISTFILES_FTP =		Yes
 PERMIT_PACKAGE_CDROM =		Yes
@@ -23,7 +21,8 @@ WANTLIB +=	GL SDL X11 c m ogg pthread stdc++ z
 
 RUN_DEPENDS = devel/sdl-image \
 		audio/libvorbis \
-		audio/openal
+		audio/openal \
+		net/enet
 
 WRKSRC =	${WRKDIST}/source/src
 
@@ -34,8 +33,25 @@ MAKE_FLAGS +=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
 		CXX="${CXX}"
 
-DATADIR =	${PREFIX}/share/assaultcube
+DATADIR =	${PREFIX}/assaultcube
 
 SUBST_VARS +=	DATADIR
+
+pre-configure:
+	cp ${FILESDIR}/assaultcube.sh ${WRKSRC}/
+	${SUBST_CMD} ${WRKSRC}/assaultcube.sh
+	sed -e 's!/libexec/assaultcube!&-server!' ${WRKSRC}/assaultcube.sh \
+	    > ${WRKSRC}/assaultcube-server.sh
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/ac_client ${PREFIX}/libexec/assaultcube
+	${INSTALL_PROGRAM} ${WRKSRC}/ac_server ${PREFIX}/libexec/assaultcube-server
+	${INSTALL_SCRIPT} ${WRKSRC}/assaultcube.sh ${PREFIX}/bin/assaultcube
+	${INSTALL_SCRIPT} ${WRKSRC}/assaultcube-server.sh ${PREFIX}/bin/assaultcube-server
+	${INSTALL_DATA_DIR} ${DATADIR}
+	cd ${WRKDIST} && pax -rw bot config packages ${DATADIR}
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/assaultcube
+	${INSTALL_DATA} ${WRKDIST}/README.html ${PREFIX}/share/doc/assaultcube
+	cd ${WRKDIST}/docs && pax -rw . ${PREFIX}/share/doc/assaultcube
 
 .include <bsd.port.mk>

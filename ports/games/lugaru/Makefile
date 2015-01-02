@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2010/07/09 09:37:37 jakemsr Exp $
+# $OpenBSD$
 
 COMMENT =		rabbit fighting game
 
@@ -28,7 +28,7 @@ LIB_DEPENDS =		audio/libvorbis \
 
 NO_TEST=	Yes
 post-install:
-	echo "PATH=$PATH:/usr/local/lugaru\n/usr/local/lugaru/lugaru" > /usr/local/bin/lugaru
+	echo "cd /usr/local/lugaru\n/usr/local/lugaru/lugaru\ncd -" > /usr/local/bin/lugaru
 	chmod +x /usr/local/bin/lugaru
 
 .include <bsd.port.mk>
