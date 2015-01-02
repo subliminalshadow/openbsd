@@ -1,0 +1,28 @@
+"xbindkeys_show" 
+control+shift + q
+"dmenu_run"
+mod1+p
+"togglebar"
+mod1+b
+"pkill -9 compiz"
+Mod1+Shift+q
+"xterm -e "transset-df .85 -a > /dev/null; zsh""
+Mod1+Shift+Return
+"toggledecor"
+mod1+d
+"firefox"
+mod4+f
+"links -g www.google.com"
+mod4+s
+"dbus-launch nautilus --no-desktop"
+mod4+n
+"libreoffice"
+mod4+l
+"gvim"
+mod4+v
+"setxkbmap us"
+mod4+1
+"setxkbmap rs"
+mod4+2
+"setxkbmap rs -variant latin"
+mod4+3

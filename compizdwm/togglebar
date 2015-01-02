@@ -1,0 +1,7 @@
+#!/bin/sh
+ps -cax | grep conky > /dev/null
+if [ $? -eq 0 ]; then
+	pkill -9 conky
+else
+	/usr/local/bin/conky
+fi

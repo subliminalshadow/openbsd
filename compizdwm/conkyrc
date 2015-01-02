@@ -1,0 +1,25 @@
+background no
+use_xft yes
+xftfont Terminus:size=7
+xftalpha 0.8
+update_interval 2
+own_window yes
+own_window_type panel
+own_window_argb_visual yes
+own_window_argb_value 0
+double_buffer yes
+draw_shades no
+draw_outline yes
+stippled_borders no
+border_margin 0
+border_width 0
+default_color white
+alignment top_left
+minimum_size 1279
+gap_x 0
+gap_y 0 
+no_buffers yes
+uppercase yes
+
+TEXT
+${alignr}UP: ${execi 60 uptime | grep up | awk '{print $3}' | cut -d , -f 1} | CPU: $freq_g GHz USED: ${cpu cpu0}% | TEMP: ${execi 10 sysctl -n hw.sensors.cpu0.temp0 | cut -d . -f 1}C | RAM: ${execi 5 top -n 1 | grep "Mem" | awk '{print $3}' | cut -d / -f 1} | BAT: ${apm_battery_life} | ${time %B %d %R}

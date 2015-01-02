@@ -1,0 +1,7 @@
+#!/bin/sh
+ps -cax | grep gtk-window-decor > /dev/null
+if [ $? -eq 0 ]; then
+	pkill -9 gtk-window-decor
+else
+	/usr/local/bin/gtk-window-decorator
+fi
