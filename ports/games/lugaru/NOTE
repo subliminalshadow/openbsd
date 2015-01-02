@@ -1,0 +1,5 @@
+After install, run as root:
+chmod 0777 /usr/local/lugaru/Data/Users
+so you can save your game progress.
+
+If you encounter freezes, deactivate decals in the game options.
