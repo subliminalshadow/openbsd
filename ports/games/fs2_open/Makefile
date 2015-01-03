@@ -20,7 +20,7 @@ PERMIT_PACKAGE_CDROM =		Yes
 PERMIT_PACKAGE_FTP =		Yes
 NO_TEST=	Yes
 
-WANTLIB +=	GL SDL X11 c m ogg pthread stdc++ z
+WANTLIB +=	GL SDL c m ogg pthread stdc++ GLU lua5.1 openal png theora vorbis vorbisfile jpeg
 
 BUILD_DEPENDS = devel/autoconf/2.69 \
                 devel/automake/1.9

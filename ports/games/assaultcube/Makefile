@@ -17,8 +17,6 @@ PERMIT_DISTFILES_FTP =		Yes
 PERMIT_PACKAGE_CDROM =		Yes
 PERMIT_PACKAGE_FTP =		Yes
 
-WANTLIB +=	GL SDL X11 c m ogg pthread stdc++ z
-
 RUN_DEPENDS = devel/sdl-image \
 		audio/libvorbis \
 		audio/openal \

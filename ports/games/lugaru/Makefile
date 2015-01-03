@@ -18,7 +18,7 @@ PERMIT_DISTFILES_FTP=	Yes
 
 MODULES =		devel/cmake
 
-WANTLIB =		c ogg m pthread vorbis vorbisfile SDL GL GLU ICE SM X11 Xext stdc++ z png openal jpeg
+WANTLIB =		c ogg m pthread vorbisfile SDL GL GLU ICE SM X11 Xext stdc++ z png openal jpeg
 
 LIB_DEPENDS =		audio/libvorbis \
 			devel/sdl \
