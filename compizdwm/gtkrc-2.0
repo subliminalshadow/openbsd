@@ -1,0 +1,4 @@
+include "/usr/local/share/themes/SlicknesS-blue/gtk-2.0/gtkrc"
+
+gtk-icon-theme-name = "blendedcrystal"
+gtk-cursor-theme-name = "Pulse-Glass"
