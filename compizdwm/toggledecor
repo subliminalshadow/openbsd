@@ -1,7 +1,7 @@
 #!/bin/sh
-ps -cax | grep gtk-window-decor > /dev/null
+ps -cax | grep emerald > /dev/null
 if [ $? -eq 0 ]; then
-	pkill -9 gtk-window-decor
+	pkill -9 emerald
 else
-	/usr/local/bin/gtk-window-decorator
+	/usr/local/bin/emerald
 fi
