@@ -2,7 +2,7 @@
 
 COMMENT =	freespace 2 open
 
-V =		3_7_0
+V =		3_7_2_RC3
 DISTNAME = 	fs2_open_$V_src
 PKGNAME =	fs2_open-$V
 CATEGORIES =	games
@@ -20,7 +20,7 @@ PERMIT_PACKAGE_CDROM =		Yes
 PERMIT_PACKAGE_FTP =		Yes
 NO_TEST=	Yes
 
-WANTLIB +=	GL SDL c m ogg pthread stdc++ GLU lua5.1 openal png theora vorbis vorbisfile jpeg
+WANTLIB +=	GL SDL c m ogg pthread stdc++ GLU lua5.1 openal png theora vorbis vorbisfile
 
 BUILD_DEPENDS = devel/autoconf/2.69 \
                 devel/automake/1.9
