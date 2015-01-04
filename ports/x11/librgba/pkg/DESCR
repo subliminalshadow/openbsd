@@ -1,0 +1,2 @@
+Gtk+ module to activate RGBA in gtk apps.
+Use it with Cimitan's murrine theme engine instead of patching applications.
