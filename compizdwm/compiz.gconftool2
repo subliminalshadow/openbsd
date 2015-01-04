@@ -293,7 +293,7 @@
       <key>general/allscreens/options/unmaximize_window_key</key>
       <schema_key>/schemas/apps/compiz/general/allscreens/options/unmaximize_window_key</schema_key>
       <value>
-        <string>&lt;Alt&gt;F5</string>
+        <string>&lt;Alt&gt;l</string>
       </value>
     </entry>
     <entry>
@@ -328,7 +328,7 @@
       <key>general/screen0/options/detect_refresh_rate</key>
       <schema_key>/schemas/apps/compiz/general/screen0/options/detect_refresh_rate</schema_key>
       <value>
-        <bool>true</bool>
+        <bool>false</bool>
       </value>
     </entry>
     <entry>
@@ -349,7 +349,7 @@
       <key>general/screen0/options/force_independent_output_painting</key>
       <schema_key>/schemas/apps/compiz/general/screen0/options/force_independent_output_painting</schema_key>
       <value>
-        <bool>false</bool>
+        <bool>true</bool>
       </value>
     </entry>
     <entry>
@@ -395,7 +395,7 @@
       <key>general/screen0/options/refresh_rate</key>
       <schema_key>/schemas/apps/compiz/general/screen0/options/refresh_rate</schema_key>
       <value>
-        <int>50</int>
+        <int>60</int>
       </value>
     </entry>
     <entry>
@@ -416,7 +416,7 @@
       <key>general/screen0/options/unredirect_fullscreen_windows</key>
       <schema_key>/schemas/apps/compiz/general/screen0/options/unredirect_fullscreen_windows</schema_key>
       <value>
-        <bool>true</bool>
+        <bool>false</bool>
       </value>
     </entry>
     <entry>
@@ -537,7 +537,7 @@
       <value>
         <list type="string">
             <value>
-              <string>animation:Glide 2</string>
+              <string>animation:Dream</string>
             </value>
         </list>
       </value>
@@ -803,7 +803,7 @@
       <value>
         <list type="string">
             <value>
-              <string>animation:Glide 1</string>
+              <string>animation:Dream</string>
             </value>
         </list>
       </value>
@@ -1026,7 +1026,7 @@
       <key>plugins/blur/allscreens/options/pulse</key>
       <schema_key>/schemas/apps/compiz/plugins/blur/allscreens/options/pulse</schema_key>
       <value>
-        <bool>false</bool>
+        <bool>true</bool>
       </value>
     </entry>
     <entry>
@@ -1061,7 +1061,7 @@
       <key>plugins/blur/screen0/options/focus_blur</key>
       <schema_key>/schemas/apps/compiz/plugins/blur/screen0/options/focus_blur</schema_key>
       <value>
-        <bool>false</bool>
+        <bool>true</bool>
       </value>
     </entry>
     <entry>
@@ -1075,7 +1075,7 @@
       <key>plugins/blur/screen0/options/gaussian_radius</key>
       <schema_key>/schemas/apps/compiz/plugins/blur/screen0/options/gaussian_radius</schema_key>
       <value>
-        <int>3</int>
+        <int>5</int>
       </value>
     </entry>
     <entry>
@@ -1961,7 +1961,7 @@
       <key>plugins/decoration/allscreens/options/command</key>
       <schema_key>/schemas/apps/compiz/plugins/decoration/allscreens/options/command</schema_key>
       <value>
-        <string></string>
+        <string>emerald</string>
       </value>
     </entry>
     <entry>
@@ -4242,7 +4242,7 @@
       <key>plugins/wobbly/screen0/options/friction</key>
       <schema_key>/schemas/apps/compiz/plugins/wobbly/screen0/options/friction</schema_key>
       <value>
-        <float>3</float>
+        <float>2</float>
       </value>
     </entry>
     <entry>
@@ -4256,7 +4256,7 @@
       <key>plugins/wobbly/screen0/options/grid_resolution</key>
       <schema_key>/schemas/apps/compiz/plugins/wobbly/screen0/options/grid_resolution</schema_key>
       <value>
-        <int>8</int>
+        <int>64</int>
       </value>
     </entry>
     <entry>
@@ -4284,7 +4284,7 @@
       <key>plugins/wobbly/screen0/options/min_grid_size</key>
       <schema_key>/schemas/apps/compiz/plugins/wobbly/screen0/options/min_grid_size</schema_key>
       <value>
-        <int>8</int>
+        <int>128</int>
       </value>
     </entry>
     <entry>

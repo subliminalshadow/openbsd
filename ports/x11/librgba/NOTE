@@ -1,1 +1,12 @@
 Copy librgba.tar.gz to /usr/ports/distfiles
+Install gtk2-murrine-engine and murrine-based themes
+
+Add export GTK_MODULES=rgba to .profile
+Set environment variable GTK_RGBA_APPS (add to .profile)
+export GTK_RGBA_APPS= list of applications
+
+Set it to colon-separated list of applications to activate rgba ONLY in these apps:
+GTK_RGBA_APPS=gedit:app2:app3
+
+Prepend "allbut" to start to activate rgba in ALL apps except listed:
+GTK_RGBA_APPS=allbut:gedit:app2:app3
