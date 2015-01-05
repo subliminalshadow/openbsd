@@ -1,0 +1,2 @@
+If you encounter game crashes, enable "Use only 2D/stereo for sound effects"
+in wxlauncher, or by adding -no_3d_sound to your game executable's arguments
