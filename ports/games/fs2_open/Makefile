@@ -2,7 +2,7 @@
 
 COMMENT =	freespace 2 open
 
-V =		3_7_2_RC3
+V =		3_7_2_RC4
 DISTNAME = 	fs2_open_$V_src
 PKGNAME =	fs2_open-$V
 CATEGORIES =	games
@@ -23,18 +23,19 @@ NO_TEST=	Yes
 WANTLIB +=	GL SDL c m ogg pthread stdc++ GLU lua5.1 openal png theora vorbis vorbisfile
 
 BUILD_DEPENDS = devel/autoconf/2.69 \
-                devel/automake/1.9
+                devel/automake/1.10
 
 RUN_DEPENDS = devel/sdl \
 		devel/jansson \
 		audio/libvorbis \
 		multimedia/libtheora \
 		graphics/png \
+		graphics/jpeg \
 		audio/openal \
 		lang/lua/5.1
 
 AUTOCONF_VERSION=2.69
-AUTOMAKE_VERSION=1.9
+AUTOMAKE_VERSION=1.10
 CONFIGURE_STYLE = gnu
 WRKDIST=${WRKDIR}/fs2_open_$V
 WRKSRC=${WRKDIR}/fs2_open_$V
