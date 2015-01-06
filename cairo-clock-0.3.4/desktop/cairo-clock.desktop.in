@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+_Name=MacSlow's Cairo-Clock
+_Comment=a super fine analog clock
+Exec=cairo-clock
+Icon=cairo-clock
+Categories=GNOME;Application;Utility;

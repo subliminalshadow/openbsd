@@ -1,4 +1,4 @@
 openbsd
 =======
 
-My OpenBSD-related things
+Contains software that I managed to compile and run on OpenBSD.
