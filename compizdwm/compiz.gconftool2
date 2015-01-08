@@ -54,13 +54,7 @@
               <string>3d</string>
             </value>
             <value>
-              <string>trailfocus</string>
-            </value>
-            <value>
               <string>grid</string>
-            </value>
-            <value>
-              <string>firepaint</string>
             </value>
             <value>
               <string>tile</string>
@@ -251,7 +245,7 @@
       <key>general/allscreens/options/texture_filter</key>
       <schema_key>/schemas/apps/compiz/general/allscreens/options/texture_filter</schema_key>
       <value>
-        <int>2</int>
+        <int>0</int>
       </value>
     </entry>
     <entry>
@@ -356,14 +350,14 @@
       <key>general/screen0/options/hsize</key>
       <schema_key>/schemas/apps/compiz/general/screen0/options/hsize</schema_key>
       <value>
-        <int>9</int>
+        <int>10</int>
       </value>
     </entry>
     <entry>
       <key>general/screen0/options/lighting</key>
       <schema_key>/schemas/apps/compiz/general/screen0/options/lighting</schema_key>
       <value>
-        <bool>true</bool>
+        <bool>false</bool>
       </value>
     </entry>
     <entry>
@@ -402,21 +396,21 @@
       <key>general/screen0/options/sync_to_vblank</key>
       <schema_key>/schemas/apps/compiz/general/screen0/options/sync_to_vblank</schema_key>
       <value>
-        <bool>true</bool>
+        <bool>false</bool>
       </value>
     </entry>
     <entry>
       <key>general/screen0/options/texture_compression</key>
       <schema_key>/schemas/apps/compiz/general/screen0/options/texture_compression</schema_key>
       <value>
-        <bool>false</bool>
+        <bool>true</bool>
       </value>
     </entry>
     <entry>
       <key>general/screen0/options/unredirect_fullscreen_windows</key>
       <schema_key>/schemas/apps/compiz/general/screen0/options/unredirect_fullscreen_windows</schema_key>
       <value>
-        <bool>false</bool>
+        <bool>true</bool>
       </value>
     </entry>
     <entry>
@@ -2093,7 +2087,7 @@
     <entry>
       <key>plugins/firepaint/allscreens/options/clear_button</key>
       <value>
-        <string>Button0</string>
+        <string>&lt;Shift&gt;&lt;Super&gt;c</string>
       </value>
     </entry>
     <entry>
@@ -2105,7 +2099,7 @@
     <entry>
       <key>plugins/firepaint/allscreens/options/initiate_button</key>
       <value>
-        <string>Button0</string>
+        <string>&lt;Shift&gt;&lt;Super&gt;Button1</string>
       </value>
     </entry>
     <entry>
@@ -2123,7 +2117,7 @@
     <entry>
       <key>plugins/firepaint/screen0/options/fire_color</key>
       <value>
-        <string>#000000ff</string>
+        <string>#ff3305ff</string>
       </value>
     </entry>
     <entry>
@@ -2135,13 +2129,13 @@
     <entry>
       <key>plugins/firepaint/screen0/options/fire_mystical</key>
       <value>
-        <bool>false</bool>
+        <bool>true</bool>
       </value>
     </entry>
     <entry>
       <key>plugins/firepaint/screen0/options/fire_size</key>
       <value>
-        <float>20.100000381469727</float>
+        <float>14.100000381469727</float>
       </value>
     </entry>
     <entry>
@@ -2749,7 +2743,7 @@
     <entry>
       <key>plugins/put/allscreens/options/put_viewport_10_key</key>
       <value>
-        <string>Disabled</string>
+        <string>&lt;Shift&gt;&lt;Alt&gt;0</string>
       </value>
     </entry>
     <entry>
@@ -2791,31 +2785,31 @@
     <entry>
       <key>plugins/put/allscreens/options/put_viewport_5_key</key>
       <value>
-        <string>Disabled</string>
+        <string>&lt;Shift&gt;&lt;Alt&gt;5</string>
       </value>
     </entry>
     <entry>
       <key>plugins/put/allscreens/options/put_viewport_6_key</key>
       <value>
-        <string>Disabled</string>
+        <string>&lt;Shift&gt;&lt;Alt&gt;6</string>
       </value>
     </entry>
     <entry>
       <key>plugins/put/allscreens/options/put_viewport_7_key</key>
       <value>
-        <string>Disabled</string>
+        <string>&lt;Shift&gt;&lt;Alt&gt;7</string>
       </value>
     </entry>
     <entry>
       <key>plugins/put/allscreens/options/put_viewport_8_key</key>
       <value>
-        <string>Disabled</string>
+        <string>&lt;Shift&gt;&lt;Alt&gt;8</string>
       </value>
     </entry>
     <entry>
       <key>plugins/put/allscreens/options/put_viewport_9_key</key>
       <value>
-        <string>Disabled</string>
+        <string>&lt;Shift&gt;&lt;Alt&gt;9</string>
       </value>
     </entry>
     <entry>
@@ -3054,7 +3048,7 @@
       <key>plugins/rotate/allscreens/options/rotate_left_key</key>
       <schema_key>/schemas/apps/compiz/plugins/rotate/allscreens/options/rotate_left_key</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Alt&gt;Left</string>
+        <string>&lt;Alt&gt;comma</string>
       </value>
     </entry>
     <entry>
@@ -3068,7 +3062,7 @@
       <key>plugins/rotate/allscreens/options/rotate_left_window_key</key>
       <schema_key>/schemas/apps/compiz/plugins/rotate/allscreens/options/rotate_left_window_key</schema_key>
       <value>
-        <string>&lt;Shift&gt;&lt;Alt&gt;Left</string>
+        <string>&lt;Shift&gt;&lt;Alt&gt;comma</string>
       </value>
     </entry>
     <entry>
@@ -3082,7 +3076,7 @@
       <key>plugins/rotate/allscreens/options/rotate_right_key</key>
       <schema_key>/schemas/apps/compiz/plugins/rotate/allscreens/options/rotate_right_key</schema_key>
       <value>
-        <string>&lt;Control&gt;&lt;Alt&gt;Right</string>
+        <string>&lt;Alt&gt;period</string>
       </value>
     </entry>
     <entry>
@@ -3096,7 +3090,7 @@
       <key>plugins/rotate/allscreens/options/rotate_right_window_key</key>
       <schema_key>/schemas/apps/compiz/plugins/rotate/allscreens/options/rotate_right_window_key</schema_key>
       <value>
-        <string>&lt;Shift&gt;&lt;Alt&gt;Right</string>
+        <string>&lt;Shift&gt;&lt;Alt&gt;period</string>
       </value>
     </entry>
     <entry>
@@ -4085,7 +4079,7 @@
     <entry>
       <key>plugins/tile/allscreens/options/tile_toggle_key</key>
       <value>
-        <string>Disabled</string>
+        <string>&lt;Alt&gt;f</string>
       </value>
     </entry>
     <entry>
@@ -4097,7 +4091,7 @@
     <entry>
       <key>plugins/tile/allscreens/options/tile_vertically_key</key>
       <value>
-        <string>&lt;Alt&gt;f</string>
+        <string>&lt;Alt&gt;l</string>
       </value>
     </entry>
     <entry>
@@ -4326,7 +4320,7 @@
       <key>plugins/zoom/allscreens/options/zoom_pan_button</key>
       <schema_key>/schemas/apps/compiz/plugins/zoom/allscreens/options/zoom_pan_button</schema_key>
       <value>
-        <string>&lt;Super&gt;Button2</string>
+        <string>Button0</string>
       </value>
     </entry>
     <entry>
