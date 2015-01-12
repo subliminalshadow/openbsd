@@ -1,0 +1,4 @@
+@comment $OpenBSD$
+@bin bin/arx
+@bin bin/arxsavetool
+@bin bin/arxunpak

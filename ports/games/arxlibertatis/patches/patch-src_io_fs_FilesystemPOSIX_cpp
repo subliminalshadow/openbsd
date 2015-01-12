@@ -1,0 +1,10 @@
+--- src/io/fs/FilesystemPOSIX.cpp.orig	Thu Oct 17 19:24:39 2013
++++ src/io/fs/FilesystemPOSIX.cpp	Mon Jan 12 15:48:07 2015
+@@ -25,6 +25,7 @@
+ #include <cstdio>
+ #include <cstring>
+ #include <cstdlib>
++#include <cerrno>
+ 
+ #include <sys/stat.h>
+ #include <sys/errno.h>
