@@ -25,10 +25,11 @@ CONFIGURE_ARGS = -DBUILD_CRASHREPORTER=off
 CONFIGURE_ENV = CXX="g++ -lpthread" \
 		CC="gcc -lpthread"
 do-install:
+	cp /usr/ports/pobj/${PKGNAME}/arx-libertatis-${V}/scripts/arx-install-data /usr/local/bin
 	${INSTALL_PROGRAM} /usr/ports/pobj/${PKGNAME}/build-${ARCH}/arx ${PREFIX}/bin
 	${INSTALL_PROGRAM} /usr/ports/pobj/${PKGNAME}/build-${ARCH}/arxsavetool ${PREFIX}/bin
 	${INSTALL_PROGRAM} /usr/ports/pobj/${PKGNAME}/build-${ARCH}/arxunpak ${PREFIX}/bin
-	${INSTALL_DATA}	/usr/ports/pobj/${PKGNAME}/arx-libertatis-${V}/data/man/arx.6 ${PREFIX}/man/man6
-	${INSTALL_DATA}	/usr/ports/pobj/${PKGNAME}/arx-libertatis-${V}/data/man/arxsavetool.1 ${PREFIX}/man/man1
-	${INSTALL_DATA}	/usr/ports/pobj/${PKGNAME}/arx-libertatis-${V}/data/man/arxunpak.1 ${PREFIX}/man/man1
+	${INSTALL_DATA}	/usr/ports/pobj/${PKGNAME}/arx-libertatis-${V}/data/man/arx.6 /usr/local/man/man6
+	${INSTALL_DATA}	/usr/ports/pobj/${PKGNAME}/arx-libertatis-${V}/data/man/arxsavetool.1 /usr/local/man/man1
+	${INSTALL_DATA}	/usr/ports/pobj/${PKGNAME}/arx-libertatis-${V}/data/man/arxunpak.1 /usr/local/man/man1
 .include <bsd.port.mk>

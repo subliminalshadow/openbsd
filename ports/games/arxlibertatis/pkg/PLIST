@@ -2,3 +2,5 @@
 @bin bin/arx
 @bin bin/arxsavetool
 @bin bin/arxunpak
+share/applications/
+share/pixmaps/
