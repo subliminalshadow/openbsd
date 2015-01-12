@@ -21,8 +21,6 @@ CONFIGURE_STYLE = gnu
 CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
-PKG_CREATE_NO_CHECKS=	Yes
-
 post-install:
 	@rm -f ${PREFIX}/lib/compiz/*.la
 

@@ -1,0 +1,10 @@
+--- CMakeLists.txt.orig	Tue Sep 17 20:22:50 2013
++++ CMakeLists.txt	Mon Jan 12 12:06:31 2015
+@@ -3,6 +3,7 @@
+ cmake_minimum_required(VERSION 2.8)
+ 
+ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
++set(CURSES_INCLUDE_DIRS "/usr/local/include/ncursesw")
+ 
+ include(cmake/CMakeConfs.cmake)
+ 

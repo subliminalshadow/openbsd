@@ -20,6 +20,4 @@ CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
 		CC="gcc -liberty"
 
-PKG_CREATE_NO_CHECKS=	Yes
-
 .include <bsd.port.mk>

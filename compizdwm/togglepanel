@@ -1,0 +1,7 @@
+#!/bin/sh
+ps -cax | grep xfce4-panel > /dev/null
+if [ $? -eq 0 ]; then
+	pkill -9 xfce4-panel
+else
+	/usr/local/bin/xfce4-panel
+fi

@@ -22,7 +22,7 @@ NO_TEST=	Yes
 
 WANTLIB +=	GL SDL X11 c m pthread stdc++ z
 
-LIB_DEPENDS = devel/cmake
+BUILD_DEPENDS = devel/cmake
 RUN_DEPENDS = devel/sdl \
 	      lang/python/2.7 \
 	      x11/wxWidgets \

@@ -10,6 +10,8 @@ Mod1+Shift+q
 Mod1+Shift+Return
 "toggledecor"
 mod1+d
+"togglepanel"
+mod1+space
 "firefox"
 mod4+f
 "links -g www.google.com"

@@ -1,0 +1,14 @@
+$OpenBSD$
+--- dist.mk.orig	Fri May 22 13:52:00 2009
++++ dist.mk	Fri May 22 13:53:45 2009
+@@ -35,8 +35,8 @@
+ SHELL = /bin/sh
+ 
+ # These define the major/minor/patch versions of ncurses.
+-NCURSES_MAJOR = 5
+-NCURSES_MINOR = 7
++NCURSES_MAJOR = $(NC_MAJOR)
++NCURSES_MINOR = $(NC_MINOR)
+ NCURSES_PATCH = 20081102
+ 
+ # We don't append the patch to the version, since this only applies to releases
