@@ -12,18 +12,16 @@ HOMEPAGE =	http://scp.indiegames.us/
 
 MASTER_SITES =	http://swc.fs2downloads.com/builds/
 
-MAINTAINER =	subliminal <noxeternae@yandex.ru>
-
-# zlib license
 PERMIT_DISTFILES_FTP =		Yes
 PERMIT_PACKAGE_CDROM =		Yes
 PERMIT_PACKAGE_FTP =		Yes
 NO_TEST=	Yes
 
-WANTLIB +=	GL SDL c m ogg pthread stdc++ GLU lua5.1 openal png theora vorbis vorbisfile
+WANTLIB =	GL SDL c m ogg pthread stdc++ GLU lua5.1 openal png theora vorbis vorbisfile
 
 BUILD_DEPENDS = devel/autoconf/2.69 \
-                devel/automake/1.10
+                devel/automake/1.10 \
+		sysutils/ggrep # needed for automating DRM chmod
 
 RUN_DEPENDS = devel/sdl \
 		devel/jansson \
@@ -41,10 +39,13 @@ WRKDIST=${WRKDIR}/fs2_open_$V
 WRKSRC=${WRKDIR}/fs2_open_$V
 
 pre-configure:
+		# game needs lua.pc, we have lua51.pc, so make that one
 		cp /usr/local/lib/pkgconfig/lua51.pc /usr/local/lib/pkgconfig/lua.pc
 		cd ${WRKSRC} && ./autogen.sh
 do-install:
 		cd ${WRKSRC} && make install
 post-install:
-		grep -q -F 'chmod 0666 /dev/drm*' /etc/rc.local || echo 'chmod 0666 /dev/drm*' >> /etc/rc.local
+		# makes DRM acceleration accessible to the end user, adds 'chmod 0666 /dev/drm*'
+		# to /etc/rc.local if it's not already present there
+		ggrep -q -F 'chmod 0666 /dev/drm*' /etc/rc.local || echo 'chmod 0666 /dev/drm*' >> /etc/rc.local
 .include <bsd.port.mk>
