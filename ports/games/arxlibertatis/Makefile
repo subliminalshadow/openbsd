@@ -25,7 +25,7 @@ CONFIGURE_ARGS = -DBUILD_CRASHREPORTER=off
 CONFIGURE_ENV = CXX="g++ -lpthread" \
 		CC="gcc -lpthread"
 do-install:
-	${INSTALL_SCRIPT} /usr/ports/pobj/${PKGNAME}/arx-libertatis-${V}/scripts/arx-install-data ${PREFIX}/bin
+	${INSTALL_SCRIPT} /usr/ports/pobj/${PKGNAME}/arx-libertatis-${V}/scripts/arx-install-data ${PREFIX}/bin/arx-install-data
 	${INSTALL_PROGRAM} /usr/ports/pobj/${PKGNAME}/build-${ARCH}/arx ${PREFIX}/bin
 	${INSTALL_PROGRAM} /usr/ports/pobj/${PKGNAME}/build-${ARCH}/arxsavetool ${PREFIX}/bin
 	${INSTALL_PROGRAM} /usr/ports/pobj/${PKGNAME}/build-${ARCH}/arxunpak ${PREFIX}/bin
