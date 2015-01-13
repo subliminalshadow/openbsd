@@ -18,7 +18,6 @@ SHARED_LIBS +=  emeraldengine             0.0 # 0.0
 
 CONFIGURE_STYLE = gnu
 CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib" \
-		CC="gcc -liberty"
+		LDFLAGS="-L${LOCALBASE}/lib -liberty"
 
 .include <bsd.port.mk>
