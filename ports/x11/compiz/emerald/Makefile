@@ -14,6 +14,7 @@ BUILD_DEPENDS = devel/libtool \
 		devel/libwnck
 
 RUN_DEPENDS =	x11/compiz/core
+SHARED_LIBS +=  emeraldengine             0.0 # 0.0
 
 CONFIGURE_STYLE = gnu
 CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include" \

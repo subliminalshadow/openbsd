@@ -450,6 +450,7 @@ lugaru/Data/Textures/snowtree.png
 lugaru/Data/Textures/splinter.png
 lugaru/Data/Textures/tooth.png
 lugaru/Data/Textures/tree.png
+@mode 0777
 lugaru/Data/Users
 lugaru/Data/config.txt
 @bin lugaru/lugaru

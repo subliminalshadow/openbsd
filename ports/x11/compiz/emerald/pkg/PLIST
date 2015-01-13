@@ -1,0 +1,56 @@
+@comment $OpenBSD$
+@bin bin/emerald
+@bin bin/emerald-theme-manager
+include/emerald/
+include/emerald/emerald.h
+include/emerald/engine.h
+include/emerald/libengine.h
+include/emerald/titlebar.h
+lib/emerald/
+lib/emerald/engines/
+lib/emerald/engines/liblegacy.la
+lib/emerald/engines/liblegacy.so
+lib/emerald/engines/libline.la
+lib/emerald/engines/libline.so
+lib/emerald/engines/liboxygen.la
+lib/emerald/engines/liboxygen.so
+lib/emerald/engines/libpixmap.la
+lib/emerald/engines/libpixmap.so
+lib/emerald/engines/libtruglass.la
+lib/emerald/engines/libtruglass.so
+lib/emerald/engines/libvrunner.la
+lib/emerald/engines/libvrunner.so
+lib/emerald/engines/libzootreeves.la
+lib/emerald/engines/libzootreeves.so
+lib/libemeraldengine.la
+@lib lib/libemeraldengine.so.${LIBemeraldengine_VERSION}
+lib/pkgconfig/emeraldengine.pc
+@man man/man1/emerald-theme-manager.1
+@man man/man1/emerald.1
+share/applications/
+share/applications/emerald-theme-manager.desktop
+share/emerald/
+share/emerald/settings.ini
+share/emerald/theme/
+share/emerald/theme/buttons.above.png
+share/emerald/theme/buttons.close.png
+share/emerald/theme/buttons.glow.png
+share/emerald/theme/buttons.help.png
+share/emerald/theme/buttons.inactive_glow.png
+share/emerald/theme/buttons.max.png
+share/emerald/theme/buttons.menu.png
+share/emerald/theme/buttons.min.png
+share/emerald/theme/buttons.restore.png
+share/emerald/theme/buttons.shade.png
+share/emerald/theme/buttons.sticky.png
+share/emerald/theme/buttons.unabove.png
+share/emerald/theme/buttons.unshade.png
+share/emerald/theme/buttons.unsticky.png
+share/emerald/theme/theme.ini
+share/emerald/theme/theme.screenshot.png
+share/icons/hicolor/48x48/mimetypes/application-x-emerald-theme.png
+share/mime-info/
+share/mime-info/emerald.mime
+share/mime/packages/emerald.xml
+share/pixmaps/
+share/pixmaps/emerald-theme-manager-icon.png

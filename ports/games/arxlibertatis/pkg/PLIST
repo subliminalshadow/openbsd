@@ -1,6 +1,5 @@
 @comment $OpenBSD$
 @bin bin/arx
+bin/arx-install-data
 @bin bin/arxsavetool
 @bin bin/arxunpak
-share/applications/
-share/pixmaps/
