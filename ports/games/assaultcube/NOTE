@@ -1,6 +1,0 @@
-Copy the contents of /usr/local/share/assaultcube
-to ~/.assaultcube
-
-Start the game with:
-assaultcube -w(YOUR_RES_WIDTH) -h(YOUR_RES_HEIGHT)
-e. g. assaultcube -w1920 -h1080

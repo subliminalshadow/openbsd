@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT =	fast and fun First-Person-Shooter
+COMMENT =	cube engine first person shooter
 
 V =		1.2.0.2
 DISTNAME = 	AssaultCube_v$V
