@@ -19,4 +19,6 @@ else
 fi
 
 cd $GAMEDIR || exit 1
-exec ${PREFIX}/libexec/assaultcube "$@"
+width=$(xrandr | grep current | awk '{print $8}')
+height=$(xrandr | grep current | awk '{print $10}')
+exec ${PREFIX}/libexec/assaultcube -w $width -h $height "$@"
