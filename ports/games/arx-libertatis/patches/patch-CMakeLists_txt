@@ -1,0 +1,34 @@
+--- CMakeLists.txt.orig	Wed Jan 14 15:41:16 2015
++++ CMakeLists.txt	Wed Jan 14 16:19:12 2015
+@@ -132,11 +132,11 @@
+ 	set(USER_DIR_PREFIXES   "~/Library/Application Support" CACHE STRING "User dir paths")
+ else()
+ 	set(DATA_DIR
+-		"games/arx:arx"
++		"games/arx"
+ 		CACHE STRING "Data dir names"
+ 	)
+ 	set(DATA_DIR_PREFIXES
+-		"\${XDG_DATA_DIRS:-/usr/local/share/:/usr/share/}:/opt"
++		"/usr/local/share"
+ 		CACHE STRING "Data dir paths"
+ 	)
+ 	set(USER_DIR
+@@ -144,7 +144,7 @@
+ 		CACHE STRING "User dir names"
+ 	)
+ 	set(USER_DIR_PREFIXES
+-		"\${XDG_DATA_HOME:-$HOME/.local/share}"
++		".local/share"
+ 		CACHE STRING "User dir paths"
+ 	)
+ 	set(CONFIG_DIR
+@@ -152,7 +152,7 @@
+ 		CACHE STRING "Config dir names"
+ 	)
+ 	set(CONFIG_DIR_PREFIXES
+-		"\${XDG_CONFIG_HOME:-$HOME/.config}"
++		".config"
+ 		CACHE STRING "Config dir paths"
+ 	)
+ 	set(IGNORE_EXE_DIR
