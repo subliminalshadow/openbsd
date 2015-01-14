@@ -1,0 +1,22 @@
+--- scripts/arx-install-data.orig	Wed Jan 14 23:58:21 2015
++++ scripts/arx-install-data	Thu Jan 15 00:24:37 2015
+@@ -118,14 +118,14 @@
+ 	downloads_dir="$HOME/Downloads"
+ else
+ 	# Linux, FreeBSD, ...
+-	data_dirs="${XDG_DATA_DIRS:-"/usr/local/share/:/usr/share/"}:/opt"
+-	data_home="${XDG_DATA_HOME:-"$HOME/.local/share"}"
+-	config_home="${XDG_CONFIG_HOME:-"$HOME/.config"}"
+-	data_dir_suffixes='games/arx:arx'
++	data_dirs="/usr/local/share"
++	data_home=".local/share"
++	config_home=".config"
++	data_dir_suffixes='games/arx'
+ 	user_dir_suffixes='arx'
+ 	config_dir_suffixes='arx'
+ 	[ -f "${config_home}/user-dirs.dirs" ] && . "${config_home}/user-dirs.dirs"
+-	downloads_dir="${XDG_DOWNLOAD_DIR:-"$HOME/Downloads"}"
++	downloads_dir="Downloads"
+ fi
+ downloads_dir="${downloads_dir%/}"
+ tempdir="${TMPDIR:-"/tmp"}"
