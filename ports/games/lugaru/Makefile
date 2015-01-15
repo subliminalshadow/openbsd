@@ -28,4 +28,8 @@ LIB_DEPENDS =		audio/libvorbis \
 
 NO_TEST=	Yes
 
+pre-configure:
+	cp ${FILESDIR}/wrapper.sh ${WRKSRC}
+post-install:
+	${INSTALL_SCRIPT} ${WRKSRC}/wrapper.sh ${PREFIX}/bin/lugaru
 .include <bsd.port.mk>
