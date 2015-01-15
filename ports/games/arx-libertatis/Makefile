@@ -28,10 +28,13 @@ CONFIGURE_ENV =		LDFLAGS=-lpthread
 
 NO_TEST =		Yes
 
+pre-configure:
+	cp ${FILESDIR}/wrapper.sh ${WRKDIST}
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIST}/scripts/arx-install-data \
 		${PREFIX}/bin/arx-install-data
-	${INSTALL_PROGRAM} ${WRKBUILD}/arx ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKBUILD}/arx ${PREFIX}/libexec
+	${INSTALL_SCRIPT} ${WRKDIST}/wrapper.sh ${PREFIX}/bin/arx
 	${INSTALL_PROGRAM} ${WRKBUILD}/arxsavetool ${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKBUILD}/arxunpak ${PREFIX}/bin
 
