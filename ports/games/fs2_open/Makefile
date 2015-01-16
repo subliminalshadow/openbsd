@@ -7,8 +7,6 @@ DISTNAME = 	fs2_open_$V_src
 PKGNAME =	fs2_open-$V
 CATEGORIES =	games
 EXTRACT_SUFX =	.tgz
-WRKDIST=${WRKDIR}/fs2_open_$V
-WRKSRC=${WRKDIR}/fs2_open_$V
 
 HOMEPAGE =	http://scp.indiegames.us/
 MASTER_SITES =	http://swc.fs2downloads.com/builds/
@@ -47,6 +45,7 @@ RUN_DEPENDS =	devel/sdl \
 AUTOCONF_VERSION=2.69
 AUTOMAKE_VERSION=1.10
 CONFIGURE_STYLE = gnu
+WRKDIST=${WRKDIR}/fs2_open_$V
 
 pre-configure:
 		cd ${WRKDIST} && ./autogen.sh
